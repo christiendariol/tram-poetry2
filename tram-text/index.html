@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        background-color: black;
+        font-size: 100px;
+        text-align: center;
+      }
+
+      .white {
+        color: black;
+      }
+
+      .black {
+        color: white;
+        background-color: black;
+      }
+
+      .cell {
+        display: block;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .unchanged {
+        color: white;
+      }
+
+      .rechanged {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <span class="cell unchanged">click around</span>
+      <span class="cell white">no roof</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no ceiling</span>
+      <span class="cell white">no departure</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no light</span>
+      <span class="cell white">no roof</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no light</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no platform</span>
+      <span class="cell rechanged">keep scrolling</span>
+      <span class="cell white">no ceiling</span>
+      <span class="cell white">no departure</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no light</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no ceiling</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no ceiling</span>
+      <span class="cell white">no departure</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no light</span>
+      <span class="cell white">no departure</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no ceiling</span>
+      <span class="cell white">no departure</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">no platform</span>
+      <span class="cell white">no ceiling</span>
+      <span class="cell white">no departure</span>
+      <span class="cell white">no right</span>
+      <span class="cell white">what</span>
+      <span class="cell white">time</span>
+      <span class="cell white">does</span>
+      <span class="cell white">the</span>
+      <span class="cell white">tram</span>
+      <span class="cell white">leave</span>
+      <span class="cell white">where</span>
+      <span class="cell white">does</span>
+      <span class="cell white">it</span>
+      <span class="cell white">go</span>
+      <span class="cell white">at</span>
+      <span class="cell white">night</span>
+    </div>
+
+    <audio
+      id="audioClip"
+      src="https://cdn.glitch.global/7476686f-036b-4d02-9729-b838c4b8aad3/tram-bell.mp3?v=1684311429818.mp3"
+    ></audio>
+
+    <script>
+      $("span").mouseover(function () {
+        $(this).toggleClass("white");
+        $(this).toggleClass("black");
+        playAudioClip();
+      });
+
+      function playAudioClip() {
+        var audio = document.getElementById("audioClip");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>

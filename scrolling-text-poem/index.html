@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+</style>
+<div>
+    <div class="scrolling-text-container">
+    <div class="scrolling-text">
+<ul id="firstline">
+  <li id="first">A very  moving  and peaceful  place</li>
+</ul>
+<ul id="secondline">
+  <li id="second">Stumbled on this while walking through the park</li>
+</ul>
+<ul id="thirdline">
+  <li id="third">Stumbled on this Incredible horizon</li>
+</ul>
+<ul id="fourthline">
+  <li id="fourth">of creation.</li>
+</ul>
+  <ul id="fifthline">
+      <li id="fifth">Best walk in Albert park </li>
+  </ul>
+<ul id = "sixthline">
+  <li id="sixth">heratage back to1855</li>
+</ul>
+  <ul id = "seventhline">
+   <li id="seventh">Serene and efficient </li> 
+</ul>
+  <ul id = "eigthline">
+     <li id="eighth">Breathtaking.</li> 
+</ul>
+  <ul id = "ninthline">
+     <li id="ninth">Well laied out to get around</li> 
+      </ul>
+<ul id = "tenthline">
+      <li id="tenth">Old  tram passage waiting room</li> 
+    </ul>
+<ul id = "eleventhline">
+ <li id="eleventh">to see more boats</li>  
+    </ul>
+<ul id = "twelthline">
+   <li id="twelth">Even major historic changes</li>   
+    </ul>  
+ <ul id = "thirteenthline">
+         <li id="thirteenth">Forest walk, wildlife</li>    
+    </ul>
+<ul id = "fourteenthline">
+  
+    <li id="fourteenth">Old  tram passage waiting room</li> 
+</ul>   
+<ul id = "fifteenthline">
+  <li id = "fifteenth">The sunset</li>
+      </ul>
+
+</div>
+<style>
+  #firstline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -250px;
+     margin-top: ;
+    
+  }
+   #secondline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: 200px
+    }
+  
+  #thirdline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: 450px
+  }
+  #fourthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: ;
+  }
+  
+  #fifthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: 200px;
+  }
+  
+  #sixthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: ;
+  }
+    #seventhline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -200px;
+  }
+      #eigthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -400px;
+  }
+  
+        #ninthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -400px;
+  }
+      #tenthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -200px;
+  }
+      #eleventhline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -400px;
+  }
+  
+        #twelthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -400px;
+  }
+          #thirteenthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -400px;
+  }
+          #fourteenthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -400px;
+  }
+            #fifteenthline {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    text-indent: -450px;
+  }
+
+</style>
+<style>
+  .custom-audio-button {
+    /* Add your custom styles here */
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+</style>
+
+<body>
+  <audio id="player" loop>
+    <source src="https://cdn.glitch.global/7e34e059-0233-449e-a437-04e17141c9e8/No.1%20A%20Minor%20Waltz%20-%20Esther%20Abrami.mp3?v=1685343833469.mp3" type="audio/mp3">
+  </audio>  
+  <button class="custom-audio-button" onclick="toggleAudio()">Click</button>
+
+  <script>
+    var audio = document.getElementById("player");
+    var customButton = document.getElementById("player").nextElementSibling;
+    var scrollingText = document.querySelector(".scrolling-text");
+  
+    // Add a click event listener to the custom button
+    customButton.addEventListener("click", function() {
+      if (audio.paused) {
+        audio.play();
+        scrollingText.style.animationPlayState = "running";
+      } else {
+        audio.pause();
+        scrollingText.style.animationPlayState = "paused";
+      }
+    });
+  </script>
+  <style>
+  .custom-audio-button {
+  width: 180px;
+  height: 90px;
+  font-size: 50px;
+  font-family: '';
+  background-color: ;
+  border-radius: 30px;
+  margin-top: 50px;
+    
+}
+
+  </style>
+</body>
+
+
+      <style>
+        body {
+        background-color: ;
+        color: #fff;
+        font-family: ''
+        font-size: 35px;
+
+        }
+    </style>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.glitch.global/7e34e059-0233-449e-a437-04e17141c9e8/birmingham-museums-trust-8wcoY3wcbL0-unsplash.jpg?v=1685336317853.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-position: center;
+
+}
+</style>
+  <style>
+    .scrolling-text-container {
+      height: 1000px; /* Adjust the height as needed */
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      
+    }
+
+    .scrolling-text {
+      position: absolute;
+      top: 100%;
+      animation: scroll 50s linear infinite paused;
+    }
+
+    @keyframes scroll {
+      100% {
+        top: 100%;
+      }
+      100% {
+        top: -150%; /* Adjust the percentage based on the height of the container */
+      }
+    }
+  </style>
+        <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Scroll to the bottom of the page
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+  
