@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1, minimum-scale=0.1, maximum-scale=5.0">
+    <title>Vodka</title>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Source+Code+Pro&family=Tilt+Prism&display=swap");
+</style>
+<ul id="first">
+  <li id="first" class="fadeInAnimated">We always make sure to visit at least once a week. </li>
+  <li id="second" class="fadeInAnimated">A picturesque spot.</li>
+  <li id="third" class="fadeInAnimated">There’s not many places you’d rather embark</li>
+</ul>
+<ul id="secondpart">
+  <li id="fourth" class="fadeInAnimated">or disembark</li>
+  <li id="fifth" class="fadeInAnimated">…but that adds</li>
+  <li id="sixth" class="fadeInAnimated">to the intrigue.</li>
+</ul>
+
+<style>
+  #first {
+    list-style-type: none;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  #secondpart {
+    list-style-type: none;
+    font-size: 35px;
+    text-indent: 400px;
+    text-align: center;
+    
+  }
+</style>
+<style>
+  #second {
+    text-indent: -430px;
+  }
+    #third {
+      text-indent: -70px;
+    }
+  #fifth {
+    text-indent: 500px;
+  }
+
+</style>
+<style>
+  @keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  .fadeInAnimated {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  }
+
+  #second {
+    animation-delay: 2s;
+  }
+
+  #third {
+    animation-delay: 6s;
+  }
+
+  #fourth {
+      animation-delay: 10s;
+  }
+
+  #fifth {
+      animation-delay: 11s;
+  }
+  #sixth {
+      animation-delay: 12s;
+  }
+
+  
+</style>
+<style>
+  body {
+  background-color: #000;
+  color: white;
+  font-family: ''
+  font-size: 35px
+</style>
+<style>
+  #first li:hover {
+    color: black;
+  }
+
+  #secondpart li:hover {
+    color: black;
+  }
+  
+</style>

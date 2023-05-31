@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green city</title>
+  </head>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+        li {
+      cursor: pointer;
+    }
+  </style>
+<body>
+  <ul>
+    <li id="zeroline" onclick="revealLine('firstline')">Look</li>
+    <li id="firstline" class="hidden" onclick="revealLine('secondline')">Look for the Green city</li>
+    <li id="secondline" class="hidden" onclick="revealLine('thirdline')">Street car</li>
+    <li id="thirdline" class="hidden" onclick="revealLine('fourthline')">Hop on</li>
+    <li id="fourthline" class="hidden" onclick="revealLine('fifthline')">Take a ride to circle the city</li>
+    <li id="fifthline" class="hidden" onclick="revealLine('sixthline')">Hop off </li>
+    <li id="sixthline" class="hidden" onclick="revealLine('seventhline')">It will be crowded </li>
+    <li id="seventhline" class="hidden" onclick="revealLine('eigthline')">Door to door</li>
+    <li id="eigthline" class="hidden" onclick="revealLine('ninthline')">Do it</li>
+    <li id="ninthline" class="hidden" onclick="revealLine('tenthline')">It's fun</li>
+    <li id="tenthline" class="hidden" onclick="revealLine('eleventhline')">It's touristy</li>
+  </ul>
+
+  <script>
+    function revealLine(lineId) {
+      var line = document.getElementById(lineId);
+      line.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
+
+
+  <style>
+    #zeroline {
+            list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+    }
+    #firstline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      text-indent: ;
+      margin-top: 50px;
+      transform: rotate();
+      position: ;
+    }
+    #secondline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: ;
+      transform: rotate();
+    }
+
+    #thirdline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+      position: ;
+      transform: rotate();
+    }
+    #fourthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+      transform: rotate() translatex();
+    }
+
+    #fifthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+      transform: rotate() translatey();
+    }
+
+    #sixthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+      margin-top: ;
+      transform: rotate();
+    }
+    #seventhline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+      transform: rotate();
+    }
+    #eigthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      transform: rotate() translatex();
+    }
+
+    #ninthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: ;
+      position: ;
+
+      color: ;
+      transform: rotate() translatey();
+    }
+    #tenthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+
+      transform: rotate();
+    }
+    #eleventhline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+    }
+    #twelthline {
+      list-style-type: none;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 30px;
+      text-indent: px;
+      color: ;
+    }
+  </style>
+  <style>
+    body {
+      background-color: black;
+      color: #fff;
+      font-family: "";
+    }
+    @keyframes changeBackground {
+      0% {
+        background-color: white;
+      }
+      30% {
+        background-color: white;
+      }
+      70% {
+        background-color: black;
+      }
+    }
+
+    body {
+      animation: changeBackground 20s;
+    }
+  </style>
+
+</html>
